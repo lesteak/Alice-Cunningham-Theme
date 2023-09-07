@@ -1,7 +1,7 @@
 <main class="mt-12">
   <div class="container">
     <div class=" max-w-6xl mx-auto">
-      <h1 class="text-center"><?php echo \Tofino\Helpers\title(); ?></h1>
+      <h1><?php echo \Tofino\Helpers\title(); ?></h1>
       <?php if(have_posts()) { ?>
         <div class="divide-y divide-gray-400">
           <?php while (have_posts()) : the_post();
