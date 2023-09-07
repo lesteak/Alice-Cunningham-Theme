@@ -32,7 +32,7 @@ $this_item = dx_get_current_nav_item();
 <header class="bg-white <?php echo m\menu_sticky(); ?>">
   <nav class="w-full py-4 justify-between flex container">
       <div class="flex-shrink-0 flex items-center">
-        <a href="<?php echo home_url(); ?>" class="font-header no-underline text-4xl font-bold tracking-wider">ALICE CUNNINGHAM</a>
+        <a href="<?php echo home_url(); ?>" class="font-header no-underline text-4xl font-bold tracking-wider uppercase"><?php echo get_bloginfo(); ?></a>
       </div>
 
     <button class="flex items-center md:hidden js-menu-toggle z-50" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

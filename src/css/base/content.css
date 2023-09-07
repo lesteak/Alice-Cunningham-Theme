@@ -83,6 +83,10 @@ h3,
   ol {
     @apply list-decimal;
   }
+
+  label {
+    @apply block font-bold;
+  }
 }
 
 @layer components {

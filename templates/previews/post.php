@@ -4,6 +4,11 @@
     <?php get_template_part('templates/partials/post-meta'); ?>
   </div>
   <div>
-    <?php the_content(); ?>
+    <?php if(get_field('intro_text_block')) { ?>
+      <?php echo get_field('intro_text_block'); ?>
+    <?php } ?>
+  </div>
+  <div>
+    <a href="<?php echo get_the_permalink(); ?>" class="btn btn-primary">Read more</a>
   </div>
 </div>
