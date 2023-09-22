@@ -2,6 +2,26 @@ nav .menu-item {
   @apply tracking-extra-wide uppercase font-header md:font-sans text-3xl md:text-sm font-normal my-2 md:my-0;
 
   a {
-    @apply text-gray-700 no-underline hover:text-brand;
+    @apply text-gray-700 no-underline hover:text-brand hover:underline;
+  }
+}
+
+nav#top-nav {
+
+}
+
+#menu-top {
+  @apply flex justify-end divide-x py-1 space-x-2;
+
+  .menu-item {
+    @apply text-xs;
+
+    & + .menu-item {
+      @apply pl-2;
+    }
+
+    a {
+      @apply text-white hover:underline;
+    }
   }
 }

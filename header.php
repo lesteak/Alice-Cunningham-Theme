@@ -30,6 +30,7 @@ $this_item = dx_get_current_nav_item();
 ?>
 
 <header class="bg-white <?php echo m\menu_sticky(); ?>">
+  <?php get_template_part('templates/partials/top-nav'); ?>
   <nav class="w-full py-4 justify-between flex container">
       <div class="flex-shrink-0 flex items-center">
         <a href="<?php echo home_url(); ?>" class="font-header no-underline text-2xl md:text-4xl font-bold tracking-wider uppercase"><?php echo get_bloginfo(); ?></a>

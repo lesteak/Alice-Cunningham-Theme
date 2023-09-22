@@ -36,6 +36,7 @@ function setup() {
 
   // Register wp_nav_menu() menus
   register_nav_menus([
+    'top_nav' => __('Top Navigation', 'tofino'),
     'header_navigation' => __('Header Navigation', 'tofino'),
     'footer_navigation' => __('Footer Navigation', 'tofino')
   ]);
