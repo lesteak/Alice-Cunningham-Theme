@@ -1,4 +1,4 @@
-<div class="bg-slate-900 text-white">
+<div class="bg-black text-white">
   <div class="container align-right">
     <?php if (has_nav_menu('top_nav')) { ?>
       <nav id="top-nav">

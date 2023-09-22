@@ -35,6 +35,7 @@ $tofino_includes = [
 
 $custom_includes = [
   "src/custom/register-types.php",
+  "src/custom/woocommerce.php",
 ];
 
 $tofino_includes = array_merge($tofino_includes, $custom_includes);
@@ -179,12 +180,6 @@ function dx_convert_youtube_url($string) {
       $string
   );
 }
-
-function dx_add_woocommerce_support() {
-    add_theme_support( 'woocommerce' );
-}
-
-add_action( 'after_setup_theme', 'dx_add_woocommerce_support' );
 
 function get_caption($post = null) {
   $caption = array();

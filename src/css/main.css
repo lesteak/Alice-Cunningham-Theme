@@ -19,3 +19,5 @@
 @import 'components/buttons';
 
 @import 'tailwindcss/utilities';
+
+@import 'layouts/woocommerce';
