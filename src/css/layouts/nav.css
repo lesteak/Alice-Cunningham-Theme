@@ -10,7 +10,7 @@ nav#top-nav {
 
 }
 
-#menu-top {
+#menu-top-nav {
   @apply flex justify-end divide-x py-1 space-x-2;
 
   .menu-item {

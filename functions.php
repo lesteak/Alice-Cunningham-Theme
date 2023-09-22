@@ -179,3 +179,24 @@ function dx_convert_youtube_url($string) {
       $string
   );
 }
+
+function dx_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_action( 'after_setup_theme', 'dx_add_woocommerce_support' );
+
+function get_caption($post = null) {
+  $caption = array();
+  
+  $caption[] = get_the_title();
+  
+  if(get_field('portfolio_description')) { 
+    $caption[] = get_field('portfolio_description');
+  }
+  if(get_field('portfolio_year')) { 
+    $caption[] = get_field('portfolio_year');
+  }
+
+return $caption;
+}
