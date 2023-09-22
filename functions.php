@@ -191,11 +191,12 @@ function get_caption($post = null) {
   
   $caption[] = get_the_title();
   
-  if(get_field('portfolio_description')) { 
-    $caption[] = get_field('portfolio_description');
-  }
   if(get_field('portfolio_year')) { 
     $caption[] = get_field('portfolio_year');
+  }
+  
+  if(get_field('portfolio_description')) { 
+    $caption[] = strip_tags(get_field('portfolio_description'));
   }
 
 return $caption;
