@@ -189,7 +189,7 @@ add_action( 'after_setup_theme', 'dx_add_woocommerce_support' );
 function get_caption($post = null) {
   $caption = array();
   
-  $caption[] = get_the_title();
+  $caption[] = '<strong>' . get_the_title() . '</strong>';
   
   if(get_field('portfolio_year')) { 
     $caption[] = get_field('portfolio_year');

@@ -19,7 +19,7 @@ if($posts) { ?>
             $caption[] = $thumb['caption'];
           } ?>
           <div class="w-1/2 md:w-1/3 masonry-item p-0.5 relative">
-            <a href="<?php echo $thumb['url']; ?>" data-fancybox="<?php echo $post->post_name; ?>" data-caption="<?php echo implode('-' , $caption); ?>" class="relative block">
+            <a href="<?php echo $thumb['url']; ?>" data-fancybox="<?php echo $post->post_name; ?>" data-caption="<?php echo implode(' - ' , $caption); ?>" class="relative block">
               <?php echo wp_get_attachment_image($thumb_id, 'large'); ?>
               <div class="absolute inset-0 flex justify-center items-center text-black bg-white no-underline bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity dx-caps p-4">
                 <?php echo get_the_title(); ?>
