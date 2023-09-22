@@ -4,6 +4,8 @@
   'orderby' => 'order'
 );
 
+//help from https://fancyapps.com/fancybox/plugins/images/
+
 $posts = get_posts($args);
 if($posts) { ?>
   <div class="container mt-12">
