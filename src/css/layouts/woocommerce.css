@@ -1,3 +1,11 @@
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit.disabled, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit:disabled, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit:disabled[disabled], .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.disabled, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:disabled, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:disabled[disabled], .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.disabled, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button:disabled, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button:disabled[disabled], .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button.disabled, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button:disabled, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button:disabled[disabled], :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit.disabled, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit:disabled, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit:disabled[disabled], :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button.disabled, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button:disabled, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button:disabled[disabled], :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.disabled, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:disabled, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:disabled[disabled], :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button.disabled, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button:disabled, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button:disabled[disabled] {
+  @apply btn btn-secondary;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button {
+  @apply btn btn-primary;
+}
+
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit.alt,
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.alt,
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt,
@@ -10,7 +18,6 @@
   @apply btn btn-primary;
 }
 
-
 .woocommerce div.product p.price,
 .woocommerce div.product span.price,
 .woocommerce ul.products li.product .price {
@@ -19,4 +26,18 @@
 
 .entry-summary {
   @apply space-y-4;
+}
+
+.woocommerce a.added_to_cart {
+  @apply block;
+}
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+  @apply border-t-black;
+
+  &::before {
+    @apply text-black;
+  }
 }
