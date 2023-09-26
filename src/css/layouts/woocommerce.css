@@ -41,3 +41,7 @@
     @apply text-black;
   }
 }
+
+.wc_payment_method.payment_method_square_credit_card label {
+  @apply flex;
+}
