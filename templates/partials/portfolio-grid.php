@@ -1,13 +1,16 @@
 <?php $args = array(
   'post_type' => 'portfolio_items',
   'posts_per_page' => -1,
-  'orderby' => 'order'
+  'orderby' => 'menu_order',
 );
 
 //help from https://fancyapps.com/fancybox/plugins/images/
 
 $posts = get_posts($args);
 if($posts) { ?>
+  <?php foreach($posts as $post) {
+    var_dump(get_the_title());
+  } ?>
   <div class="container mt-12">
     <div class="max-w-7xl mx-auto">
       <div id="masonry-grid" class="flex flex-wrap">
