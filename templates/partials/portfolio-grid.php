@@ -8,9 +8,6 @@
 
 $posts = get_posts($args);
 if($posts) { ?>
-  <?php foreach($posts as $post) {
-    var_dump(get_the_title());
-  } ?>
   <div class="container mt-12">
     <div class="max-w-7xl mx-auto">
       <div id="masonry-grid" class="flex flex-wrap">
