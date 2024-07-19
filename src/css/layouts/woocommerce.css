@@ -45,3 +45,17 @@
 .wc_payment_method.payment_method_square_credit_card label {
   @apply flex;
 }
+
+
+.woocommerce ul.products, .woocommerce-page ul.products {
+  @apply grid gap-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product,
+.woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+  @apply float-none flex flex-col justify-between items-stretch grow w-full m-0 clear-none;
+}
+
+.woocommerce .products ul::after, .woocommerce .products ul::before, .woocommerce ul.products::after, .woocommerce ul.products::before {
+  @apply hidden;
+}
