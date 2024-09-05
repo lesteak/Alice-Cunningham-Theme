@@ -32,6 +32,46 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_r
 function alice_description() {
   echo '<div class="mt-8 border-t pt-8 border-black">';
     the_content();
+
+  if(get_field('purchase_prevention')) {
+    echo '<a class="btn btn-primary" href="/contact">Contact the artist to arrange sale and delivery</a>';
+  }
+
   echo '</div>';
 }
 add_action('woocommerce_single_product_summary', 'alice_description', 55);
+
+//prevent add to cart for "contact artist" products
+function wpa_var_is_purchasable( $purchasable, $product ){
+  if(get_field('purchase_prevention')) {
+    return false;
+  }
+
+  return true;
+}
+add_filter( 'woocommerce_is_purchasable', 'wpa_var_is_purchasable', 10, 2 );
+
+
+/**
+ * Filters the list of attachment image attributes.
+ *
+ * @since 2.8.0
+ *
+ * @param string[]     $attr       Array of attribute values for the image markup, keyed by attribute name.
+ *                                 See wp_get_attachment_image().
+ * @param WP_Post      $attachment Image attachment post.
+ * @param string|int[] $size       Requested image size. Can be any registered image size name, or
+ *                                 an array of width and height values in pixels (in that order).
+ */
+function filter_wp_get_attachment_image_attributes( $attr, $attachment, $size ) {
+
+
+  // Is a WC product
+  if ( is_product()) {
+    // Add class
+    $attr['data-fancybox'] .= ' product-image';
+  }
+
+    return $attr;
+}
+add_filter( 'wp_get_attachment_image_attributes', 'filter_wp_get_attachment_image_attributes', 10, 3 );
