@@ -34,7 +34,7 @@ function alice_description() {
     the_content();
 
   if(get_field('purchase_prevention')) {
-    echo '<p><a class="btn btn-primary" href="/contact">Contact the artist to arrange sale and delivery</a></p>';
+    echo '<div class="my-12"><a class="btn btn-primary" href="/contact">Contact the artist to arrange sale and delivery</a></div>';
   }
 
   echo '</div>';
