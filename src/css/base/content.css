@@ -6,6 +6,10 @@ a {
   @apply text-brand underline;
 }
 
+body {
+  @apply font-serif;
+}
+
 h1,
 .h1,
 h2,
@@ -91,6 +95,6 @@ h3,
 
 @layer components {
   .dx-caps {
-    @apply font-sans text-sm font-normal uppercase tracking-extra-wide;
+    @apply text-sm font-normal uppercase;
   }
 }

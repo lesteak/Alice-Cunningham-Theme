@@ -1,5 +1,5 @@
 nav .menu-item {
-  @apply tracking-extra-wide uppercase font-header md:font-sans text-3xl md:text-sm font-normal my-2 md:my-0;
+  @apply text-3xl md:text-lg font-normal my-2 md:my-0;
 
   a {
     @apply text-gray-700 no-underline hover:text-brand hover:underline;

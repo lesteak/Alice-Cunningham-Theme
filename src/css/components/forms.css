@@ -8,7 +8,7 @@
   }
 
   label {
-    @apply text-sm uppercase tracking-extra-wide;
+    @apply text-sm;
 
     sup {
       @apply text-red-500;

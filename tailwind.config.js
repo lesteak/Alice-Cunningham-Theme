@@ -18,12 +18,14 @@ module.exports = {
     },
     fontWeight: {
       normal: 400,
-      bold: 600,
+      semibold: 600,
+      bold: 700,
       extrabold: 900
     },
     extend: {
       fontFamily: {
-        'header': ['Roboto Condensed', 'ui-sans-serif', 'system-ui'],
+        'header': ['EB Garamond', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman'],
+        'serif': ['EB Garamond', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman']
       },
       fontSize: {
         '8xl': '5.125rem',
@@ -74,7 +76,7 @@ module.exports = {
           gray: '#000000',
           black: '#000000'
         },
-      }
+      },
     }
   },
   plugins: [

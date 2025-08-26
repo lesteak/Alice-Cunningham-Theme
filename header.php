@@ -24,16 +24,16 @@ use \Tofino\ThemeOptions\Notifications as n; ?>
 
 <?php
 $locations = get_nav_menu_locations();
-$menu = get_term( $locations['primary_navigation'], 'nav_menu' );
+$menu = get_term( $locations['header_navigation'], 'nav_menu' );
 $menu_items = wp_get_nav_menu_items($menu);
 $this_item = dx_get_current_nav_item();
 ?>
 
 <header class="bg-white <?php echo m\menu_sticky(); ?>">
   <?php get_template_part('templates/partials/top-nav'); ?>
-  <nav class="w-full py-4 justify-between flex container">
+  <nav class="w-full py-8 justify-between flex container">
       <div class="flex-shrink-0 flex items-center">
-        <a href="<?php echo home_url(); ?>" class="font-header no-underline text-2xl md:text-4xl font-bold tracking-wider uppercase"><?php echo get_bloginfo(); ?></a>
+        <a href="<?php echo home_url(); ?>" class="font-header no-underline text-2xl md:text-4xl font-semibold"><?php echo get_bloginfo(); ?></a>
       </div>
 
     <button class="flex items-center md:hidden js-menu-toggle z-50" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

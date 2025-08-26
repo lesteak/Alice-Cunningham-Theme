@@ -27,9 +27,7 @@ if($posts) { ?>
             </a>
           </div>
           <?php $caption = get_caption($post); ?>
-          <?php if ($gallery_image['caption']) {
-            $caption[] = $gallery_image['caption'];
-          } ?>
+
           <div class="hidden">
             <?php $gallery_images = get_field('portfolio_images'); ?>
             <?php foreach($gallery_images as $key => $gallery_image) { ?>

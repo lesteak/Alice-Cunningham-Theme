@@ -18,7 +18,7 @@ export default {
       classes: false,
       events: false,
       google: {
-        families: ['Roboto+Condensed:wght@300;400;700'],
+        families: ['EB+Garamond:wght@300;400;600;700'],
         display: 'swap',
         version: 2,
       },
