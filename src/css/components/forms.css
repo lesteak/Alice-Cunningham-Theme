@@ -8,7 +8,7 @@
   }
 
   label {
-    @apply text-sm;
+    @apply text-lg;
 
     sup {
       @apply text-red-500;
@@ -17,7 +17,7 @@
 
   input[type="submit"] {
     @apply btn;
-    @apply btn-secondary;
+    @apply btn-primary;
   }
 
   .field-wrap {

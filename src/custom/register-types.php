@@ -4,6 +4,17 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 function create_post_types() {
+  register_post_type( 'project_items',
+    array(
+      'labels' => array(
+        'name' => __( 'Project Items' ),
+        'singular_name' => __( 'Project Item' ),
+      ),
+      'public' => true,
+      'has_archive' => false,
+			'supports' => array('title')
+    )
+  );
   register_post_type( 'portfolio_items',
     array(
       'labels' => array(
@@ -29,16 +40,3 @@ function create_custom_tax() {
   );
 }
 add_action( 'init', 'create_custom_tax' );
-
-
-// function custom_query_vars_filter($vars) {
-//   $vars[] .= 'url';
-//   return $vars;
-// }
-// add_filter( 'query_vars', 'custom_query_vars_filter' );
-
-// function my_acf_init() {
-//   acf_update_setting('google_api_key', get_field('google_maps_api', 'options'));
-// }
-
-// add_action('acf/init', 'my_acf_init');

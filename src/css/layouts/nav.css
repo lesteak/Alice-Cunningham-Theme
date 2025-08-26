@@ -6,15 +6,11 @@ nav .menu-item {
   }
 }
 
-nav#top-nav {
-
-}
-
 #menu-top-nav {
-  @apply flex justify-end divide-x py-1 space-x-2;
+  @apply flex justify-end divide-x space-x-2;
 
   .menu-item {
-    @apply text-xs;
+    @apply text-base;
 
     & + .menu-item {
       @apply pl-2;

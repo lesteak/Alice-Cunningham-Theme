@@ -33,7 +33,7 @@ $this_item = dx_get_current_nav_item();
   <?php get_template_part('templates/partials/top-nav'); ?>
   <nav class="w-full py-8 justify-between flex container">
       <div class="flex-shrink-0 flex items-center">
-        <a href="<?php echo home_url(); ?>" class="font-header no-underline text-2xl md:text-4xl font-semibold"><?php echo get_bloginfo(); ?></a>
+        <a href="<?php echo home_url(); ?>" class="font-header no-underline text-3xl lg:text-4xl font-semibold"><?php echo get_bloginfo(); ?></a>
       </div>
 
     <button class="flex items-center md:hidden js-menu-toggle z-50" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -14,10 +14,11 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '1rem'
+      padding: '2rem'
     },
     fontWeight: {
       normal: 400,
+      medium: 500,
       semibold: 600,
       bold: 700,
       extrabold: 900
@@ -71,8 +72,8 @@ module.exports = {
         brand: {
           DEFAULT: '#000000',
           dark: '#000000',
-          secondary: '#000000',
-          tertiary: '#000000',
+          background: '#F3F1EC',
+          link: '#7A3C3A',
           gray: '#000000',
           black: '#000000'
         },

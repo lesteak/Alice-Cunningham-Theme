@@ -7,7 +7,7 @@ a {
 }
 
 body {
-  @apply font-serif;
+  @apply font-serif text-lg;
 }
 
 h1,
@@ -18,16 +18,16 @@ h3,
 .h3,
 h4,
 .h4 {
-  @apply uppercase font-header font-bold;
+  @apply font-header font-medium;
 
   a {
-    @apply text-black no-underline hover:underline;
+    @apply text-brand no-underline hover:underline;
   }
 }
 
 h1,
 .h1 {
-  @apply text-3xl lg:text-4xl;
+  @apply text-3xl lg:text-4xl leading-[2.5rem];
 }
 
 h2,
@@ -63,6 +63,10 @@ h3,
     @apply mt-8;
   }
   
+  a {
+    @apply text-brand-link underline hover:no-underline;
+  }
+  
   p:last-of-type {
     @apply mb-0;
   }
@@ -95,6 +99,6 @@ h3,
 
 @layer components {
   .dx-caps {
-    @apply text-sm font-normal uppercase;
+    @apply text-sm font-normal;
   }
 }

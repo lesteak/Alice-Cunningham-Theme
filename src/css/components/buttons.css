@@ -1,10 +1,10 @@
 @layer components {
   .btn {
-    @apply relative inline-flex items-center px-6 py-2 border border-transparent rounded-full shadow-sm transition ease-in-out duration-150 whitespace-normal text-center uppercase font-bold justify-center no-underline text-sm hover:brightness-110 focus:outline-none focus:ring;
+    @apply relative inline-flex items-center px-6 py-2 border border-transparent rounded-sm shadow-sm transition ease-in-out duration-150 whitespace-normal text-center font-bold justify-center no-underline text-lg hover:brightness-110 focus:outline-none focus:ring;
   }
 
   .btn-primary {
-    @apply bg-brand text-white hover:bg-brand hover:brightness-90;
+    @apply bg-brand-link text-white hover:bg-brand-link hover:brightness-90;
   }
 
   .btn-secondary {
