@@ -184,14 +184,14 @@ function dx_convert_youtube_url($string) {
 function get_caption($post = null) {
   $caption = array();
   
-  $caption[] = '<strong>' . get_the_title() . '</strong>';
+  $caption[] = '<strong>' . get_the_title($post) . '</strong>';
   
-  if(get_field('portfolio_year')) { 
-    $caption[] = get_field('portfolio_year');
+  if(get_field('portfolio_year', $post)) { 
+    $caption[] = get_field('portfolio_year', $post);
   }
   
   if(get_field('portfolio_description')) { 
-    $caption[] = strip_tags(get_field('portfolio_description'));
+    $caption[] = strip_tags(get_field('portfolio_description', $post));
   }
 
 return $caption;

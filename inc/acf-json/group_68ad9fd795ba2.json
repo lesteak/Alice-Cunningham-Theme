@@ -149,7 +149,7 @@
                     "name": "video_file",
                     "aria-label": "",
                     "type": "file",
-                    "instructions": "",
+                    "instructions": "If a video file is uploaded, it will take precedence over the Image",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -166,8 +166,8 @@
                 },
                 {
                     "key": "field_68af0c41bd2d4",
-                    "label": "",
-                    "name": "",
+                    "label": "Image",
+                    "name": "image",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
@@ -211,5 +211,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756302410
+    "modified": 1756305248
 }

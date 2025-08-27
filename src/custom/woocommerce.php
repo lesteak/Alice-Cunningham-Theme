@@ -69,9 +69,13 @@ function filter_wp_get_attachment_image_attributes( $attr, $attachment, $size ) 
   // Is a WC product
   if ( is_product()) {
     // Add class
-    $attr['data-fancybox'] .= ' product-image';
+    if(array_key_exists('data-fancybox', $attr)) {
+      $attr['data-fancybox'] .= ' product-image';
+    } else {
+      $attr['data-fancybox'] = 'product-image';
+    }
   }
 
-    return $attr;
+  return $attr;
 }
 add_filter( 'wp_get_attachment_image_attributes', 'filter_wp_get_attachment_image_attributes', 10, 3 );

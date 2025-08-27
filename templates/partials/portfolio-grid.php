@@ -26,7 +26,6 @@ if($posts) { ?>
               </div>
             </a>
           </div>
-          <?php $caption = get_caption($post); ?>
 
           <div class="hidden">
             <?php $gallery_images = get_field('portfolio_images'); ?>
