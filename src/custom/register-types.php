@@ -18,8 +18,8 @@ function create_post_types() {
   register_post_type( 'portfolio_items',
     array(
       'labels' => array(
-        'name' => __( 'Portfolio Items' ),
-        'singular_name' => __( 'Portfolio Item' ),
+        'name' => __( 'Gallery Items' ),
+        'singular_name' => __( 'Gallery Item' ),
       ),
       'public' => true,
       'has_archive' => false,

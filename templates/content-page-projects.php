@@ -11,7 +11,7 @@
   ); ?>
   <?php $posts = get_posts($args); ?>
 
-  <div class="container grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  <div class="container grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     <?php foreach($posts as $post) { ?>
       <?php setup_postdata( $post ); ?>
       <?php $image = get_field('project_preview_image'); ?>

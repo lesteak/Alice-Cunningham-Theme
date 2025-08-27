@@ -5,3 +5,5 @@
     </div>
   </div>
 </main>
+
+<?php get_template_part('templates/partials/mailing-list-signup'); ?>

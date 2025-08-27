@@ -6,14 +6,27 @@
     <?php echo wp_get_attachment_image( $image['id'], 'full', null, array('class' => '')); ?>
   </div>
   <div class="flex items-center">
-    <div class="space-y-6">
-      <?php if(get_row_index() === 1 && !is_single()) { ?>
-        <h1><?php echo \Tofino\Helpers\title(); ?></h1>
-      <?php } ?>
+    <div class="space-y-16">
       <?php if($content) { ?>
-        <div class="content">
-          <?php echo $content; ?>
-        </div>
+        <?php if($post->post_name === 'contact')  { ?>
+          <?php $content = str_replace('#email#', '<a href="mailto:' . get_field('email', 'option') . '">' . get_field('email', 'option') . '</a>', $content); ?>
+          <div class="text-center space-y-6">
+            <?php if(get_row_index() === 1 && !is_single()) { ?>
+            <h1><?php echo \Tofino\Helpers\title(); ?></h1>
+          <?php } ?>
+            <?php echo $content; ?>
+          </div>
+          <div>
+            <?php get_template_part('templates/partials/mailing-list-signup'); ?>
+          </div>
+        <?php } else { ?>
+          <div class="space-y-6">
+            <?php if(get_row_index() === 1 && !is_single()) { ?>
+              <h1><?php echo \Tofino\Helpers\title(); ?></h1>
+            <?php } ?>
+            <div><?php echo $content; ?></div>
+          </div>
+        <?php } ?>
       <?php } ?>
     </div>
   </div>

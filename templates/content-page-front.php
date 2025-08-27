@@ -4,4 +4,4 @@
 <?php get_template_part('templates/partials/frontpage-items'); ?>
 <?php get_template_part('templates/partials/front-commissions'); ?>
 <?php get_template_part('templates/partials/front-quote'); ?>
-
+<?php get_template_part('templates/partials/mailing-list-signup'); ?>

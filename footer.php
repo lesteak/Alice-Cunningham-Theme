@@ -8,10 +8,6 @@ if (get_theme_mod('footer_sticky') === 'enabled') : ?>
 <?php $social = get_field('social_networks', 'options'); ?>
 
 <div class="mt-20">
-  <div>
-    <?php get_template_part('templates/partials/mailing-list-signup'); ?>
-  </div>
-  
   <?php if($social) { ?>
     <div class="bg-white">
       <div class="container py-4">

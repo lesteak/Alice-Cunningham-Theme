@@ -1,5 +1,5 @@
 .wpcf7-form {
-  @apply text-left space-y-6;
+  @apply text-center space-y-6;
 
   input[type="text"],
   input[type="email"],
@@ -22,5 +22,15 @@
 
   .field-wrap {
     @apply p-4;
+  }
+
+  .signup-fields-wrap {
+    p {
+      @apply block space-y-4;
+    }
+  }
+
+  .wpcf7-spinner {
+    @apply block mx-auto;
   }
 }

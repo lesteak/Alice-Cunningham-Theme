@@ -48,7 +48,7 @@
 
 
 .woocommerce ul.products, .woocommerce-page ul.products {
-  @apply grid gap-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4;
+  @apply grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
 }
 
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product,

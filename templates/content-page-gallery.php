@@ -9,7 +9,7 @@
   <div class="container mt-12 space-y-16 text-center">
     <h1><?php echo \Tofino\Helpers\title(); ?></h1>
     
-    <div class="grid grid-cols-4 gap-12">
+    <div class="grid grid-cols-4 gap-6">
       <?php foreach($posts as $post) { ?>
         <?php setup_postdata( $post ); ?>
         <?php $thumb = get_field('portfolio_thumb'); ?>
