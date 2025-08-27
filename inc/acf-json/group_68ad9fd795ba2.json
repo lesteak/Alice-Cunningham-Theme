@@ -144,11 +144,11 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_68ada45f94458",
-                    "label": "",
-                    "name": "",
+                    "key": "field_68af0c3cbd2d3",
+                    "label": "Video File",
+                    "name": "video_file",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "file",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -157,12 +157,38 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "maxlength": "",
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0
+                },
+                {
+                    "key": "field_68af0c41bd2d4",
+                    "label": "",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
                     "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
+                    "preview_size": "medium"
                 }
             ]
         }
@@ -185,5 +211,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756210487
+    "modified": 1756302410
 }

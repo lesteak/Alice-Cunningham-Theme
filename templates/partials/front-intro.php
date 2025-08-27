@@ -4,7 +4,7 @@ $content = get_field('intro_content');
 $button = get_field('intro_button'); ?>
 
 <section class="bg-brand-background py-24">
-  <div class="container">
+  <div class="container max-w-7xl">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-24">
       <div class="flex items-center">
         <?php if($title) { ?>

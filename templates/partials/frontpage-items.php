@@ -6,7 +6,7 @@
         <?php foreach($items as $item) { ?>
           <div class="space-y-4 text-center">
             <div class="w-full h-0 pt-2/3 relative block overflow-hidden">
-              <?php echo wp_get_attachment_image( $item['image']['id'], 'medium', null, array('class' => 'w-full h-full object-cover absolute inset-0')); ?>
+              <?php echo wp_get_attachment_image( $item['image']['id'], 'full', null, array('class' => 'w-full h-full object-cover absolute inset-0')); ?>
             </div>
             <div class="text-2xl">
               <?php echo $item['title']; ?>

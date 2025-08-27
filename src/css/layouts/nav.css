@@ -2,7 +2,11 @@ nav .menu-item {
   @apply text-3xl md:text-lg font-normal my-2 md:my-0;
 
   a {
-    @apply text-gray-700 no-underline hover:text-brand hover:underline;
+    @apply text-gray-900 no-underline hover:text-brand hover:underline;
+  }
+
+  &.current {
+    @apply underline;
   }
 }
 

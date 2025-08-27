@@ -41,7 +41,7 @@ h3,
 }
 
 .content {
-  @apply text-gray-800;
+  @apply text-gray-900;
 
   h1,
   .h1,

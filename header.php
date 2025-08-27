@@ -23,13 +23,14 @@ use \Tofino\ThemeOptions\Notifications as n; ?>
 <?php n\notification('top'); ?>
 
 <?php
+//to allow current nav setting
 $locations = get_nav_menu_locations();
 $menu = get_term( $locations['header_navigation'], 'nav_menu' );
 $menu_items = wp_get_nav_menu_items($menu);
 $this_item = dx_get_current_nav_item();
 ?>
 
-<header class="bg-white <?php echo m\menu_sticky(); ?>">
+<header class="bg-white sticky">
   <?php get_template_part('templates/partials/top-nav'); ?>
   <nav class="w-full py-8 justify-between flex container">
       <div class="flex-shrink-0 flex items-center">

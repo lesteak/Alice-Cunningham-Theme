@@ -5,10 +5,10 @@
 <?php } ?>
 
 <?php if(have_rows('flexible_content')) {?>
-
-      <?php while(have_rows('flexible_content') ) : the_row();  ?>
-        <?php //var_dump(get_row_layout()); ?>
-        <?php get_template_part('templates/flexible-content/' . get_row_layout()); ?>
-      <?php endwhile; ?>
-
-  <?php } ?>
+  <div class="space-y-16">
+    <?php while(have_rows('flexible_content') ) : the_row();  ?>
+      <?php //var_dump(get_row_layout()); ?>
+      <?php get_template_part('templates/flexible-content/' . get_row_layout()); ?>
+    <?php endwhile; ?>
+  </div>
+<?php } ?>
