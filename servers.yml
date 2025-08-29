@@ -1,15 +1,15 @@
-wp4.xinc.digital:
-  user: wp13
+x1.xinc.digital:
+  user: alicecun1
   identity_file: ~
   stage: production
-  deploy_path: ~/web/alicecunningham.co.uk/public_html/wp-content/themes
+  deploy_path: ~/public_html/wp-content/themes
   branch: main
   api_key: ~
 
-stage.xinc.digital:
-  user: stage
+x2.xinc.digital:
+  user: alice_st1
   identity_file: ~
   stage: stage
-  deploy_path: ~/web/alice.stage.xinc.digital/public_html/wp-content/themes
+  deploy_path: ~/public_html/wp-content/themes
   branch: main
   api_key: ~

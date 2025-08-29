@@ -12,12 +12,16 @@
             <?php $image_id = (is_array($image)) ? $image['id'] : $image; ?>
             <?php $caption = get_caption($highlight); ?>
             
-            <a class="space-y-2 block" href="<?php echo $image['url']; ?>" data-fancybox="<?php echo $highlight->post_name . '-' . $highlight->ID ?>" data-caption="<?php echo implode(' - ' , $caption); ?>">
-              <?php echo wp_get_attachment_image( $image_id, 'medium' ); ?>
+            <div class="space-y-2">
+              <a class="block h-0 pt-1/1 relative overflow-hidden" href="<?php echo $image['url']; ?>" data-fancybox="<?php echo $highlight->post_name . '-' . $highlight->ID ?>" data-caption="<?php echo implode(' - ' , $caption); ?>">
+                <?php echo wp_get_attachment_image( $image_id, 'medium',  null, array('class' => 'h-full w-full absolute inset-0 object-cover')); ?>
+              </a>
               <div class="font-base text-center">
-                 <?php echo $title; ?>
+                <a href="<?php echo $image['url']; ?>" data-fancybox="<?php echo $highlight->post_name . '-' . $highlight->ID ?>" data-caption="<?php echo implode(' - ' , $caption); ?>">
+                  <?php echo $title; ?>
+                </a>
               </div>
-            </a>
+            </div>
             
             <?php $gallery_images = get_field('portfolio_images', $highlight); ?>
             <?php if($gallery_images) { ?>
@@ -35,8 +39,8 @@
             <?php $image_id = (is_array($image)) ? $image['id'] : $image; ?>
             
             <div class="space-y-2">
-              <a href="<?php echo get_the_permalink($highlight); ?>">
-                <?php echo wp_get_attachment_image( $image_id, 'medium' ); ?>
+              <a href="<?php echo get_the_permalink($highlight); ?>" class="block h-0 pt-1/1 relative overflow-hidden">
+                <?php echo wp_get_attachment_image( $image_id, 'medium', null, array('class' => 'h-full w-full absolute inset-0 object-cover') ); ?>
               </a>
               <div class="font-base text-center">
                 <a href="<?php echo get_the_permalink($highlight); ?>"><?php echo $title; ?></a>

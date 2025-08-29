@@ -53,7 +53,7 @@
 
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product,
 .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
-  @apply float-none flex flex-col justify-between items-stretch grow w-full m-0 clear-none;
+  @apply float-none justify-between items-stretch grow w-full m-0 clear-none;
 }
 
 .woocommerce .products ul::after, .woocommerce .products ul::before, .woocommerce ul.products::after, .woocommerce ul.products::before {
@@ -64,4 +64,8 @@
   div {
     @apply border-2 border-white;
   }
+}
+
+.woocommerce ul.products li.product a img {
+  @apply m-0;
 }

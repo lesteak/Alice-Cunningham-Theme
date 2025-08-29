@@ -5,7 +5,7 @@ require 'recipe/common.php';
 
 // Start editable
 
-set('repository', 'git@bitbucket.org:dadads/alice-theme.git');
+set('repository', 'git@github.com:lesteak/Alice-Cunningham-Theme.git');
 
 set('ssh_type', 'native');
 set('ssh_multiplexing', true);

@@ -6,7 +6,7 @@
     <?php echo wp_get_attachment_image( $image['id'], 'full', null, array('class' => '')); ?>
   </div>
   <div class="flex items-center">
-    <div class="space-y-16">
+    <div class="space-y-16 content">
       <?php if($content) { ?>
         <?php if($post->post_name === 'contact')  { ?>
           <?php $content = str_replace('#email#', '<a href="mailto:' . get_field('email', 'option') . '">' . get_field('email', 'option') . '</a>', $content); ?>

@@ -31,8 +31,10 @@ $this_item = dx_get_current_nav_item();
 ?>
 
 <header class="bg-white sticky">
-  <?php get_template_part('templates/partials/top-nav'); ?>
-  <nav class="w-full py-8 justify-between flex container">
+  <?php if(is_woocommerce()) { ?>
+    <?php get_template_part('templates/partials/top-nav'); ?>
+  <?php } ?>
+  <nav class="w-full py-8 justify-between flex px-8">
       <div class="flex-shrink-0 flex items-center">
         <a href="<?php echo home_url(); ?>" class="font-header no-underline text-3xl lg:text-4xl font-semibold"><?php echo get_bloginfo(); ?></a>
       </div>
@@ -57,7 +59,7 @@ $this_item = dx_get_current_nav_item();
           'container'       => '',
           'container_class' => '',
           'container_id'    => '',
-          'menu_class'      => 'navbar-nav flex justify-center items-center w-full h-full md:space-x-6 flex-col md:flex-row text-center px-4 md:px-0',
+          'menu_class'      => 'navbar-nav flex justify-center items-center w-full h-full md:space-x-4 flex-col md:flex-row text-center px-4 md:px-0',
           'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
         ]);
       endif; ?>
