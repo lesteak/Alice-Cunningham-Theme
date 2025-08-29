@@ -12,7 +12,8 @@ function create_post_types() {
       ),
       'public' => true,
       'has_archive' => false,
-			'supports' => array('title')
+			'supports' => array('title'),
+      'rewrite' => array('slug' => 'project'),
     )
   );
   register_post_type( 'portfolio_items',

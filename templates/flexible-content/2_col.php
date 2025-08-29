@@ -21,7 +21,7 @@
           </div>
         <?php } else { ?>
           <div class="space-y-6">
-            <?php if(get_row_index() === 1 && !is_single()) { ?>
+            <?php if(get_row_index() === 1 && !is_page() && get_post_type() !== 'project_items') { ?>
               <h1><?php echo \Tofino\Helpers\title(); ?></h1>
             <?php } ?>
             <div><?php echo $content; ?></div>
