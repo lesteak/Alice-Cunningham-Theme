@@ -1,0 +1,52 @@
+{
+    "key": "group_68b93e01d6bd9",
+    "title": "Title Control",
+    "fields": [
+        {
+            "key": "field_68b93e01c47c3",
+            "label": "Title Visibility",
+            "name": "title_visibility",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "on": "Top",
+                "col": "First Column",
+                "off": "Off"
+            },
+            "default_value": "on",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "allow_in_bindings": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1756970668
+}

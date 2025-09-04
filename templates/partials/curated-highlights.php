@@ -2,7 +2,7 @@
 
 <?php if($highlights) { ?>
   <section class="py-24">
-    <div class="container space-y-12">
+    <div class="custom-container space-y-12">
       <h2 class="h1 text-center">Curated Highlights</h2>
       <div class="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <?php foreach($highlights as $highlight) { ?>
@@ -17,7 +17,7 @@
                 <?php echo wp_get_attachment_image( $image_id, 'medium',  null, array('class' => 'h-full w-full absolute inset-0 object-cover')); ?>
               </a>
               <div class="font-base text-center">
-                <a href="<?php echo $image['url']; ?>" data-fancybox="<?php echo $highlight->post_name . '-' . $highlight->ID ?>" data-caption="<?php echo implode(' - ' , $caption); ?>">
+                <a href="<?php echo $image['url']; ?>" data-fancybox="<?php echo $highlight->post_name . '-' . $highlight->ID ?>" data-caption="<?php echo implode(' - ' , $caption); ?>" class="no-underline hover:underline">
                   <?php echo $title; ?>
                 </a>
               </div>
@@ -43,7 +43,7 @@
                 <?php echo wp_get_attachment_image( $image_id, 'medium', null, array('class' => 'h-full w-full absolute inset-0 object-cover') ); ?>
               </a>
               <div class="font-base text-center">
-                <a href="<?php echo get_the_permalink($highlight); ?>"><?php echo $title; ?></a>
+                <a href="<?php echo get_the_permalink($highlight); ?>" class="no-underline hover:underline"><?php echo $title; ?></a>
               </div>
             </div>
           <?php } ?>

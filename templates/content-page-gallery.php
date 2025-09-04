@@ -6,7 +6,7 @@
 <?php $posts = get_posts($args); ?>
 
 <?php if($posts) { ?>
-  <div class="container mt-12 space-y-16 text-center">
+  <div class="custom-container mt-12 space-y-16">
     <h1><?php echo \Tofino\Helpers\title(); ?></h1>
     
     <div class="grid grid-cols-4 gap-6">

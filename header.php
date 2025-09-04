@@ -34,7 +34,7 @@ $this_item = dx_get_current_nav_item();
   <?php if(is_woocommerce()) { ?>
     <?php get_template_part('templates/partials/top-nav'); ?>
   <?php } ?>
-  <nav class="w-full py-8 justify-between flex px-8">
+  <nav class="w-full py-8 justify-between flex custom-container">
       <div class="flex-shrink-0 flex items-center">
         <a href="<?php echo home_url(); ?>" class="font-header no-underline text-3xl lg:text-4xl font-semibold"><?php echo get_bloginfo(); ?></a>
       </div>

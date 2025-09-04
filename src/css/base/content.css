@@ -27,7 +27,7 @@ h4,
 
 h1,
 .h1 {
-  @apply text-3xl lg:text-4xl leading-[2.5rem];
+  @apply text-2xl lg:text-3xl leading-[2.5rem];
 }
 
 h2,

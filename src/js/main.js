@@ -48,6 +48,5 @@ export default {
   },
   loaded () {
     // Javascript to be fired once fully loaded
-    console.log('loaded')
   },
 };
